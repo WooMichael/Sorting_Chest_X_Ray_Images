@@ -10,7 +10,7 @@ with open("true_results.txt", 'r') as file:
                 print(rs)
                 rs = rs.replace('\n','')
                 true_results_arr.append(rs)
-    true_results_arr.pop(0)
+#    true_results_arr.pop(0)
     print(true_results_arr)
 
 with open("prediction_results.txt", 'r') as file:
@@ -27,4 +27,5 @@ with open("prediction_results.txt", 'r') as file:
     print(prediction_results_arr)
 print(len(true_results_arr),len(prediction_results_arr))
 total_results = [i for i,j in zip(true_results_arr,prediction_results_arr) if i == j]
+print(total_results)
 print(len(total_results))
