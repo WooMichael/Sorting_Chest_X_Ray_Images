@@ -1,6 +1,6 @@
 import re
 import numpy as np
-with open("true_results.txt", 'r') as file:
+with open("../true_results.txt", 'r') as file:
     true_results_arr = list()
     for line in file:
         new_line = line.split(" ")
@@ -13,7 +13,7 @@ with open("true_results.txt", 'r') as file:
 #    true_results_arr.pop(0)
     print(true_results_arr)
 
-with open("prediction_results.txt", 'r') as file:
+with open("../prediction_results.txt", 'r') as file:
     prediction_results_arr = list()
     for line in file:
         new_line = line.split(" ")

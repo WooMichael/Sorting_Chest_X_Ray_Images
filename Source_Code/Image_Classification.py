@@ -6,8 +6,8 @@ from keras_preprocessing.image import ImageDataGenerator
 from PIL import Image
 from sklearn.neighbors import KNeighborsClassifier
 # -----------path for training------------
-train_path = 'Coronahack-Chest-XRay-Dataset/train_data_seperated_into_individual_folders'
-test_path = 'Coronahack-Chest-XRay-Dataset/test_data_seperated_into_individual_folders'
+train_path = '../Coronahack-Chest-XRay-Dataset/train_data_seperated_into_individual_folders'
+test_path = '../Coronahack-Chest-XRay-Dataset/test_data_seperated_into_individual_folders'
 print("Generating Image Data")
 width_image = list()
 height_image = list()
@@ -61,8 +61,8 @@ clf.fit(X, Y)
 print("Prediction..")
 prediction_test = clf.predict(test_prediction)
 # ---------Results that writes in file----------------
-file = open("true_results.txt", "w")
-filetwo = open("prediction_results.txt","w")
+file = open("../true_results.txt", "w")
+filetwo = open("../prediction_results.txt", "w")
 print("-----Actual----------")
 print(test_labels)
 print("----Prediction-------")

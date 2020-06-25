@@ -1,7 +1,7 @@
 import pandas as pd
 from shutil import copyfile
 
-data = pd.read_csv("Chest_xray_Corona_Metadata.csv", index_col=0, header=0)
+data = pd.read_csv("../Metadata/Chest_xray_Corona_Metadata.csv", index_col=0, header=0)
 image_name = list(data['X_ray_image_name'])
 class_type = list(data['Dataset_type'])
 label = list(data['new_label'])
